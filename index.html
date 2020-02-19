@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dice Roller</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- IE compatibility to most recent version -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- For mobile screens-->
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet"> 
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="sitestyle.css">
+</head>
+
+<body>
+	<!--   INFO BOX     (about and schedule)-->
+	<div class="container">
+		<br><br>
+	    <div class="row">
+            <div class="col-sm-12">
+                <div id="main-content">
+					<h1>D20 Roller</h1> 
+					<img src="images/d20.png">
+					<br>
+					<button type="button" class="btn btn-warning" onclick="myFunction()">Click To Roll</button>
+					<h1 id='rollTxt'>Find out what you roll here</h1>
+					<script>
+						function myFunction() {
+						  document.getElementById("rollTxt").innerHTML = Math.floor(Math.random()*20 + 1);
+						}
+						</script>
+				</div>
+			</div>
+		</div>
+
+	</div>
+  
+  <footer class="footer">
+    <div class="container">
+			<br>
+             <p class="text-muted">Copyright &copy; 2020 not actually copyrighted lul.</p>
+    </div>
+  </footer>
+  
+
+ <script src="js/jquery-3.1.1.min.js"></script>
+ <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

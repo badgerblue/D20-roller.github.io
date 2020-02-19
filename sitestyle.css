@@ -1,0 +1,89 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body { 
+	background: #222 url("images/bg.jpg") center no-repeat;
+	background-size: cover;
+   padding-bottom:145px;
+   font-family: 'Bree Serif', serif;
+ }
+ 
+.footer {
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: #222;
+	position:absolute;
+
+}
+
+#wrapper{
+	min-height:100%;
+   position:relative;
+}
+
+
+.top-buffer { 
+	margin-top:20px;
+ }
+
+#main-content {
+    padding: 20px 20px 20px 20px;
+    border-radius:5px;
+    text-align: center;
+    color: antiquewhite;
+}
+
+#main-content button{
+    color: black;
+}
+
+#main-content img{
+    width:auto;
+    height: auto;
+	max-width: 100%; 
+    max-height: 200px;
+	position: relative;
+} 
+#extra_index{
+	padding: 20px 20px 20px 20px;
+}
+
+.image-container{
+    padding: 0;
+}
+
+.centered{
+    text-align: center;
+}
+
+.logo{
+	width:auto;
+    height: auto;
+	max-width: 100%; 
+    max-height: 200px;
+	position: relative;
+}
+
+.prices{
+	width:auto;
+    height: auto;
+	max-width: 100%; 
+    max-height: 400px;
+	position: relative;
+}
+
+
+.custom {
+	text-align: center;
+	display:table-cell;
+	font-weight: bold;
+}
+
+td{
+	text-align: left;
+}
+
