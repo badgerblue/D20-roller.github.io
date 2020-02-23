@@ -16,21 +16,94 @@
 	<div class="container">
 		<br><br>
 	    <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-4">
                 <div id="main-content">
-					<h1>D20 Roller</h1> 
+					<h1>D20</h1> 
 					<img src="images/d20.png">
 					<br>
-					<button type="button" class="btn btn-warning" onclick="myFunction()">Click To Roll</button>
-					<h1 id='rollTxt'>Find out what you roll here</h1>
+					<button type="button" class="btn btn-warning" onclick="d20()">Click To Roll</button>
+					<h1 id='rollTxtD20'></h1>
 					<script>
-						function myFunction() {
-						  document.getElementById("rollTxt").innerHTML = Math.floor(Math.random()*20 + 1);
+						function d20() {
+						  document.getElementById("rollTxtD20").innerHTML = Math.floor(Math.random()*20 + 1);
+						}
+						</script>
+				</div>
+			</div>
+			<div class="col-sm-4">
+                <div id="main-content">
+					<h1>D12</h1> 
+					<img src="images/d12.png">
+					<br>
+					<button type="button" class="btn btn-warning" onclick="d12()">Click To Roll</button>
+					<h1 id='rollTxtD12'></h1>
+					<script>
+						function d12() {
+						  document.getElementById("rollTxtD12").innerHTML = Math.floor(Math.random()*12 + 1);
+						}
+						</script>
+				</div>
+			</div>
+			<div class="col-sm-4">
+                <div id="main-content">
+					<h1>D10</h1> 
+					<img src="images/d10.png">
+					<br>
+					<button type="button" class="btn btn-warning" onclick="d10()">Click To Roll</button>
+					<h1 id='rollTxtD10'></h1>
+					<script>
+						function d10() {
+						  document.getElementById("rollTxtD10").innerHTML = Math.floor(Math.random()*10 + 1);
 						}
 						</script>
 				</div>
 			</div>
 		</div>
+		<div class="row">
+            <div class="col-sm-4">
+                <div id="main-content">
+					<h1>D8</h1> 
+					<img src="images/d8.png">
+					<br>
+					<button type="button" class="btn btn-warning" onclick="d8()">Click To Roll</button>
+					<h1 id='rollTxtD8'></h1>
+					<script>
+						function d8() {
+						  document.getElementById("rollTxtD8").innerHTML = Math.floor(Math.random()*8 + 1);
+						}
+						</script>
+				</div>
+			</div>
+			<div class="col-sm-4">
+                <div id="main-content">
+					<h1>D6</h1> 
+					<img src="images/d6.png">
+					<br>
+					<button type="button" class="btn btn-warning" onclick="d6()">Click To Roll</button>
+					<h1 id='rollTxtD6'></h1>
+					<script>
+						function d6() {
+						  document.getElementById("rollTxtD6").innerHTML = Math.floor(Math.random()*6 + 1);
+						}
+						</script>
+				</div>
+			</div>
+			<div class="col-sm-4">
+                <div id="main-content">
+					<h1>D4</h1> 
+					<img src="images/d4.png">
+					<br>
+					<button type="button" class="btn btn-warning" onclick="d4()">Click To Roll</button>
+					<h1 id='rollTxtD4'></h1>
+					<script>
+						function d4() {
+						  document.getElementById("rollTxtD4").innerHTML = Math.floor(Math.random()*4 + 1);
+						}
+						</script>
+				</div>
+			</div>
+		</div>
+		
 
 	</div>
   
