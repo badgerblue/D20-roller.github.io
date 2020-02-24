@@ -7,8 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- IE compatibility to most recent version -->
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- For mobile screens-->
   <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet"> 
+  <script src="js/popper.min.js"></script>
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="sitestyle.css">
+  <script src="script.js"></script> 
 </head>
 
 <body>
@@ -21,15 +23,17 @@
 					<h1>D20</h1> 
 					<img src="images/d20.png">
 					<br>
-					<button type="button" class="btn btn-warning" onclick="d20()">Click To Roll</button>
-					<h1 id='rollTxtD20'></h1>
-					<script>
-						function d20() {
-						  let roll = Math.floor(Math.random()*20 + 1);
-						  document.getElementById("rollTxtD20").innerHTML = roll;
-						  document.getElementById("log").innerHTML = ' (D20: ' + roll + ') ' + document.getElementById("log").innerHTML;
-						}
-						</script>
+					<div class="btn-group">
+						<button type="button" class="btn btn-warning" onclick="d201()">Click to Roll</button>
+						<button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  <span class="sr-only">Toggle Dropdown</span>
+						</button>
+						<div class="dropdown-menu">
+						  <a class="dropdown-item" href="#" onclick="d201()">Roll One</a>
+						  <a class="dropdown-item" href="#" onclick="d202()">Roll Two</a>
+						  <a class="dropdown-item" href="#" onclick="d203()">Roll Three</a>
+						</div>
+					  </div>
 				</div>
 			</div>
 			<div class="col-sm-4">
@@ -37,15 +41,17 @@
 					<h1>D12</h1> 
 					<img src="images/d12.png">
 					<br>
-					<button type="button" class="btn btn-warning" onclick="d12()">Click To Roll</button>
-					<h1 id='rollTxtD12'></h1>
-					<script>
-						function d12() {
-						  let roll = Math.floor(Math.random()*12 + 1);
-						  document.getElementById("rollTxtD12").innerHTML = roll;
-						  document.getElementById("log").innerHTML = ' (D12: ' + roll + ') ' + document.getElementById("log").innerHTML;
-						}
-						</script>
+					<div class="btn-group">
+						<button type="button" class="btn btn-warning" onclick="d121()">Click to Roll</button>
+						<button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  <span class="sr-only">Toggle Dropdown</span>
+						</button>
+						<div class="dropdown-menu">
+						  <a class="dropdown-item" href="#" onclick="d121()">Roll One</a>
+						  <a class="dropdown-item" href="#" onclick="d122()">Roll Two</a>
+						  <a class="dropdown-item" href="#" onclick="d123()">Roll Three</a>
+						</div>
+					  </div>
 				</div>
 			</div>
 			<div class="col-sm-4">
@@ -53,15 +59,17 @@
 					<h1>D10</h1> 
 					<img src="images/d10.png">
 					<br>
-					<button type="button" class="btn btn-warning" onclick="d10()">Click To Roll</button>
-					<h1 id='rollTxtD10'></h1>
-					<script>
-						function d10() {
-						  let roll = Math.floor(Math.random()*10 + 1);
-						  document.getElementById("rollTxtD10").innerHTML = roll;
-						  document.getElementById("log").innerHTML = ' (D10: ' + roll + ') ' + document.getElementById("log").innerHTML;
-						}
-						</script>
+					<div class="btn-group">
+						<button type="button" class="btn btn-warning" onclick="d101()">Click to Roll</button>
+						<button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  <span class="sr-only">Toggle Dropdown</span>
+						</button>
+						<div class="dropdown-menu">
+						  <a class="dropdown-item" href="#" onclick="d101()">Roll One</a>
+						  <a class="dropdown-item" href="#" onclick="d102()">Roll Two</a>
+						  <a class="dropdown-item" href="#" onclick="d103()">Roll Three</a>
+						</div>
+					  </div>
 				</div>
 			</div>
 		</div>
@@ -71,15 +79,17 @@
 					<h1>D8</h1> 
 					<img src="images/d8.png">
 					<br>
-					<button type="button" class="btn btn-warning" onclick="d8()">Click To Roll</button>
-					<h1 id='rollTxtD8'></h1>
-					<script>
-						function d8() {
-						  let roll = Math.floor(Math.random()*8 + 1);
-						  document.getElementById("rollTxtD8").innerHTML = roll;
-						  document.getElementById("log").innerHTML = ' (D8: ' + roll + ') ' + document.getElementById("log").innerHTML;
-						}
-						</script>
+					<div class="btn-group">
+						<button type="button" class="btn btn-warning" onclick="d81()">Click to Roll</button>
+						<button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  <span class="sr-only">Toggle Dropdown</span>
+						</button>
+						<div class="dropdown-menu">
+						  <a class="dropdown-item" href="#" onclick="d81()">Roll One</a>
+						  <a class="dropdown-item" href="#" onclick="d82()">Roll Two</a>
+						  <a class="dropdown-item" href="#" onclick="d83()">Roll Three</a>
+						</div>
+					  </div>
 				</div>
 			</div>
 			<div class="col-sm-4">
@@ -87,15 +97,17 @@
 					<h1>D6</h1> 
 					<img src="images/d6.png">
 					<br>
-					<button type="button" class="btn btn-warning" onclick="d6()">Click To Roll</button>
-					<h1 id='rollTxtD6'></h1>
-					<script>
-						function d6() {
-						  let roll = Math.floor(Math.random()*6 + 1);
-						  document.getElementById("rollTxtD6").innerHTML = roll;
-						  document.getElementById("log").innerHTML = ' (D6: ' + roll + ') ' + document.getElementById("log").innerHTML;
-						}
-						</script>
+					<div class="btn-group">
+						<button type="button" class="btn btn-warning" onclick="d61()">Click to Roll</button>
+						<button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  <span class="sr-only">Toggle Dropdown</span>
+						</button>
+						<div class="dropdown-menu">
+						  <a class="dropdown-item" href="#" onclick="d61()">Roll One</a>
+						  <a class="dropdown-item" href="#" onclick="d62()">Roll Two</a>
+						  <a class="dropdown-item" href="#" onclick="d63()">Roll Three</a>
+						</div>
+					  </div>
 				</div>
 			</div>
 			<div class="col-sm-4">
@@ -103,24 +115,28 @@
 					<h1>D4</h1> 
 					<img src="images/d4.png">
 					<br>
-					<button type="button" class="btn btn-warning" onclick="d4()">Click To Roll</button>
-					<h1 id='rollTxtD4'></h1>
-					<script>
-						function d4() {
-						  let roll = Math.floor(Math.random()*4 + 1);
-						  document.getElementById("rollTxtD4").innerHTML = roll;
-						  document.getElementById("log").innerHTML = ' (D4: ' + roll + ') ' + document.getElementById("log").innerHTML;
-						}
-						</script>
+					<div class="btn-group">
+						<button type="button" class="btn btn-warning" onclick="d41()">Click to Roll</button>
+						<button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  <span class="sr-only">Toggle Dropdown</span>
+						</button>
+						<div class="dropdown-menu">
+						  <a class="dropdown-item" href="#" onclick="d41()">Roll One</a>
+						  <a class="dropdown-item" href="#" onclick="d42()">Roll Two</a>
+						  <a class="dropdown-item" href="#" onclick="d43()">Roll Three</a>
+						</div>
+					  </div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
             <div class="col-sm-12">
                 <div id="main-content">
-					<h1>log</h1>
+					<h1>Results</h1>
 					<hr >
-					<h3 id='log'></h3>
+					<h2 id='log1'></h2>
+					<h3 id='log2'></h3>
+					<h4 id='log3'></h4>
 				</div>
 			</div>
 		</div>
@@ -136,6 +152,6 @@
   
 
  <script src="js/jquery-3.1.1.min.js"></script>
- <script src="bootstrap/js/bootstrap.min.js"></script>
+ <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
