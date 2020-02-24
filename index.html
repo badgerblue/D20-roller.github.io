@@ -25,7 +25,9 @@
 					<h1 id='rollTxtD20'></h1>
 					<script>
 						function d20() {
-						  document.getElementById("rollTxtD20").innerHTML = Math.floor(Math.random()*20 + 1);
+						  let roll = Math.floor(Math.random()*20 + 1);
+						  document.getElementById("rollTxtD20").innerHTML = roll;
+						  document.getElementById("log").innerHTML = ' (D20: ' + roll + ') ' + document.getElementById("log").innerHTML;
 						}
 						</script>
 				</div>
@@ -39,7 +41,9 @@
 					<h1 id='rollTxtD12'></h1>
 					<script>
 						function d12() {
-						  document.getElementById("rollTxtD12").innerHTML = Math.floor(Math.random()*12 + 1);
+						  let roll = Math.floor(Math.random()*12 + 1);
+						  document.getElementById("rollTxtD12").innerHTML = roll;
+						  document.getElementById("log").innerHTML = ' (D12: ' + roll + ') ' + document.getElementById("log").innerHTML;
 						}
 						</script>
 				</div>
@@ -53,7 +57,9 @@
 					<h1 id='rollTxtD10'></h1>
 					<script>
 						function d10() {
-						  document.getElementById("rollTxtD10").innerHTML = Math.floor(Math.random()*10 + 1);
+						  let roll = Math.floor(Math.random()*10 + 1);
+						  document.getElementById("rollTxtD10").innerHTML = roll;
+						  document.getElementById("log").innerHTML = ' (D10: ' + roll + ') ' + document.getElementById("log").innerHTML;
 						}
 						</script>
 				</div>
@@ -69,7 +75,9 @@
 					<h1 id='rollTxtD8'></h1>
 					<script>
 						function d8() {
-						  document.getElementById("rollTxtD8").innerHTML = Math.floor(Math.random()*8 + 1);
+						  let roll = Math.floor(Math.random()*8 + 1);
+						  document.getElementById("rollTxtD8").innerHTML = roll;
+						  document.getElementById("log").innerHTML = ' (D8: ' + roll + ') ' + document.getElementById("log").innerHTML;
 						}
 						</script>
 				</div>
@@ -83,7 +91,9 @@
 					<h1 id='rollTxtD6'></h1>
 					<script>
 						function d6() {
-						  document.getElementById("rollTxtD6").innerHTML = Math.floor(Math.random()*6 + 1);
+						  let roll = Math.floor(Math.random()*6 + 1);
+						  document.getElementById("rollTxtD6").innerHTML = roll;
+						  document.getElementById("log").innerHTML = ' (D6: ' + roll + ') ' + document.getElementById("log").innerHTML;
 						}
 						</script>
 				</div>
@@ -97,13 +107,23 @@
 					<h1 id='rollTxtD4'></h1>
 					<script>
 						function d4() {
-						  document.getElementById("rollTxtD4").innerHTML = Math.floor(Math.random()*4 + 1);
+						  let roll = Math.floor(Math.random()*4 + 1);
+						  document.getElementById("rollTxtD4").innerHTML = roll;
+						  document.getElementById("log").innerHTML = ' (D4: ' + roll + ') ' + document.getElementById("log").innerHTML;
 						}
 						</script>
 				</div>
 			</div>
 		</div>
-		
+		<div class="row">
+            <div class="col-sm-12">
+                <div id="main-content">
+					<h1>log</h1>
+					<hr >
+					<h3 id='log'></h3>
+				</div>
+			</div>
+		</div>
 
 	</div>
   
